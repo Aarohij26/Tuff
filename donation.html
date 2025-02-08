@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Health Resilience Platform</title>
+    <link rel="stylesheet" href="style.css"> <!-- Main CSS -->
+    <link rel="stylesheet" href="donation.css"> <!-- Donation page-specific styles -->
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><img src="logo.png" alt="Health Resilience Platform Logo"></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="faq.html">FAQ</a>
+                <a href="donation.html" class="donation-button">Donate</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="donation-hero">
+            <h1>Make a Difference Today</h1>
+            <p>Your donation provides emergency healthcare, essential supplies, and disaster relief.</p>
+        </section>
+
+        <section class="donation-form">
+            <h2>Donate Now</h2>
+            <form>
+                <label for="amount">Choose Amount:</label>
+                <div class="amount-options">
+                    <button type="button" class="amount-btn">Rs10</button>
+                    <button type="button" class="amount-btn">Rs25</button>
+                    <button type="button" class="amount-btn">Rs50</button>
+                    <button type="button" class="amount-btn">Rs100</button>
+                    <input type="number" placeholder="Custom Amount" min="1">
+                </div>
+
+                <label for="payment">Payment Method:</label>
+                <select id="payment" required>
+                    <option value="card">Credit/Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="upi">UPI</option>
+                    <option value="bank">Bank Transfer</option>
+                </select>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <button type="submit" class="donate-btn">Donate Now</button>
+            </form>
+        </section>
+
+        <section class="impact">
+            <h2>How Your Donations Help</h2>
+            <div class="impact-boxes">
+                <div class="impact-box">Rs1 = Thank You Message</div>
+                <div class="impact-box">Rs10 = First Aid Kit</div>
+                <div class="impact-box">Rs50 = Emergency Shelter</div>
+                <div class="impact-box">Rs100 = Medical Supplies</div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>Success Stories</h2>
+            <p>"Thanks to our generous donors, we were able to rebuild lives after the recent floods."</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Health Resilience Platform. All Rights Reserved.</p>
+        <p>
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms of Service</a> | 
+            <a href="contact.html">Contact Us</a>
+        </p>
+    </footer>
+
+    <script src="donation.js"></script>
+</body>
+</html>

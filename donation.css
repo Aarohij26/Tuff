@@ -1,0 +1,204 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #6DA64B, #4D8C95);
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #3a4917;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Gradient Hover Effect */
+.nav-links a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, #6DA64B, #4D8C95);
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.nav-links a:hover::before {
+    left: 0;
+}
+
+.nav-links a:hover {
+    color: #FFF8E1;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-1px);
+}
+
+/* Hero Section */
+.donation-hero {
+    background: url('donate.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+    padding: 50px 20px;
+}
+
+.donation-hero h1 {
+    font-size: 2.5rem;
+}
+
+.donation-hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+/* Adjust Hero Image for Resolution */
+@media (max-width: 655px) {
+    .donation-hero {
+        background-size: contain;
+        background-position:center;
+    }
+}
+
+/* Donation Form */
+.donation-form {
+    text-align: center;
+    padding: 40px;
+}
+
+.donation-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.amount-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.amount-btn {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.amount-btn:hover {
+    background: #0056b3;
+}
+
+input[type="number"], input[type="text"], input[type="email"], select {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.donate-btn {
+    background: #28a745;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.donate-btn:hover {
+    background: #218838;
+}
+
+/* Impact Section */
+.impact {
+    text-align: center;
+    padding: 40px;
+    background: #f8f9fa;
+}
+
+.impact-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.impact-box {
+    background: #ffcc00;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Testimonials */
+.testimonials {
+    text-align: center;
+    padding: 40px;
+    background: #e6f7ff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 10px;
+}
